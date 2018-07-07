@@ -1,3 +1,4 @@
+# this file is sample setting file
 cd ~/local/bin
 https://github.com/umaumax/diff-filter/blob/master/diff-filter.awk diff-filter
 chmod u+x diff-filter
