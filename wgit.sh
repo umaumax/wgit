@@ -106,7 +106,7 @@ log_file_path="$HOME/.config/wgit/home.log"
 [[ ! -d "$HOME/.config/wgit" ]] && mkdir -p "$HOME/.config/wgit"
 if [[ -f ".wgit" ]]; then
 	install_file_path="$PWD/.wgit"
-	file_name=$(echo "$PWD" | sed -E 's: |/:_:g')
+	file_name=$(echo "$install_file_path" | sed -E 's: |/:_:g')
 	log_file_path="$HOME/.config/wgit/$file_name.log"
 fi
 
