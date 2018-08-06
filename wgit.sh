@@ -187,7 +187,7 @@ for line in "${lines[@]}"; do
 		update $line
 		((i++))
 	else
-		echo "${COLOR_RED}[CMD]${COLOR_NC}: $line"
+		echo "${COLOR_PURPLE}[CMD]${COLOR_NC}: $line"
 		if [[ $line =~ ^cd ]]; then
 			cd "$PWD_"
 			# 			cd $(sh -c "echo $line")
