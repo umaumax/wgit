@@ -76,7 +76,7 @@ update() {
 		# file or dir delete
 		# 		rm -rf "$target_file"
 		rm -rf "$target_file"
-		[[ $renamed_target_file != "" ]] && rm -rf "$renamed_target_file"
+		[[ -n $renamed_target_file ]] && rm -rf "$renamed_target_file"
 
 		# -N: overwrite
 		# wget -N $raw_url
@@ -88,7 +88,8 @@ update() {
 		## add
 		echo "$version_pair" >>"$log_file_path"
 
-		[[ $renamed_target_file != "" ]] && mv "$target_file" "$renamed_target_file"
+		[[ -n $renamed_target_file ]] && mv "$target_file" "$renamed_target_file"
+		return 0
 	else
 		echo "${COLOR_GREEN}[NEWEST]${COLOR_NC}: $target is Newest version"
 	fi
