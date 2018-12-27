@@ -2,14 +2,12 @@
 
 ## required
 * `git-sub-wget` command
-	* [umaumax/git\-sub\-wget]( https://github.com/umaumax/git-sub-wget )
+  * [umaumax/git\-sub\-wget]( https://github.com/umaumax/git-sub-wget )
 
 ## how to install
 ```
-wget https://raw.githubusercontent.com/umaumax/diff-filter/master/wgit.sh
-mv wgit.sh wgit
-chmod u+x wgit
-mv wgit <path>
+cd ~/local/bin
+wget https://raw.githubusercontent.com/umaumax/wgit/master/wgit.sh -O wgit && chmod u+x wgit
 ```
 
 ## how to use
@@ -21,9 +19,7 @@ wgit -h
 ```
 
 ## setting file
-`~/.wgit`
-`./.wgit`
-
+`~/.wgit` or `./.wgit`
 ```
 cd ~/local/bin
 https://github.com/umaumax/diff-filter/blob/master/diff-filter.awk diff-filter
