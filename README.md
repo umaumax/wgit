@@ -22,8 +22,8 @@ wgit -h
 `~/.wgit` or `./.wgit`
 ```
 cd ~/local/bin
-https://github.com/umaumax/diff-filter/blob/master/diff-filter.awk diff-filter
+https://github.com/umaumax/diff-filter/blob/master/diff-filter
 chmod u+x diff-filter
-https://github.com/umaumax/window-toggle/blob/master/window-toggle.sh window-toggle
+https://github.com/umaumax/window-toggle/blob/master/window-toggle
 chmod u+x window-toggle
 ```
